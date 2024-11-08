@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, StyleSheet, View, Image } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient'; // Cambiado para usar expo-linear-gradient
+import { LinearGradient } from 'expo-linear-gradient'; 
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       colors={['#FF5733', '#33C1FF']}
       style={styles.container}
     >
-      {/* Imagen de la Municipalidad de Quinchao almacenada localmente */}
+      {/* Imagen de la Municipalidad */}
       <Image
         source={require('./assets/LOGO ORIGINAL TRANSPARENCIA.png')}
         style={styles.logoQuinchao}
@@ -39,24 +39,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logoQuinchao: {
-    width: 150, // Ancho de la imagen
-    height: 150, // Altura de la imagen
-    marginBottom: 20, // Espacio debajo de la imagen
+    width: 150, 
+    height: 150, 
+    marginBottom: 20, 
   },
   text: {
     fontSize: 20,
-    fontWeight: '600', // Semi-negrita
+    fontWeight: '600', 
     color: 'green',
-    marginBottom: 20, // Espacio debajo del texto
+    marginBottom: 20, 
   },
   bottomImageContainer: {
     position: 'absolute',
-    bottom: 30, // Ajusta la distancia desde la parte inferior
+    bottom: 30, 
     alignItems: 'center',
   },
   googleLogo: {
-    width: 100, // Ancho de la imagen de Google
-    height: 100, // Altura de la imagen de Google
+    width: 100, 
+    height: 100, 
   },
 });
 

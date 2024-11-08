@@ -18,7 +18,7 @@ const MainScreen = ({ navigation }) => {
       />
       <Text style={styles.text}>¡DEPARTAMENTO MEDIO AMBIENTAL!</Text>
 
-      {/* Botón para navegar a la pantalla Home */}
+      {/* Botón para navegar */}
       <Button
         title="Iniciar Sesión"
         onPress={() => navigation.navigate('Home')}
@@ -57,8 +57,7 @@ const App = () => {
     </NavigationContainer>
   );
 };
-
-// Estilos
+//estilos 
 const styles = StyleSheet.create({
   container: {
     flex: 1,

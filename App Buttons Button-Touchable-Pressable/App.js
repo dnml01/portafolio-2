@@ -3,7 +3,7 @@ import { Text, StyleSheet, View, Image, Button, Alert, TouchableHighlight, Press
 import { LinearGradient } from 'expo-linear-gradient';
 
 const App = () => {
-  // Función para mostrar una alerta
+  // mostrar alerta
   const showAlert = (message) => {
     Alert.alert("Alerta", message);
   };
@@ -13,7 +13,7 @@ const App = () => {
       colors={['#FF5733', '#33C1FF']}
       style={styles.container}
     >
-      {/* Imagen de la Municipalidad de Quinchao almacenada localmente */}
+      {/* Imagen de la Municipalidad  */}
       <Image
         source={require('./assets/LOGO ORIGINAL TRANSPARENCIA.png')}
         style={styles.logoQuinchao}
@@ -25,13 +25,13 @@ const App = () => {
         ¡DEPARTAMENTO MEDIO AMBIENTAL!
       </Text>
 
-      {/* Botón básico de alerta */}
+      {/* Botón alerta */}
       <Button
         title="Mostrar Alerta"
         onPress={() => showAlert("Este es un mensaje de alerta")}
       />
 
-      {/* Botón personalizado con TouchableHighlight */}
+      {/* Botón personalizado  */}
       <TouchableHighlight
         style={styles.customButton}
         onPress={() => showAlert("Este es un mensaje personalizado")}
@@ -40,7 +40,7 @@ const App = () => {
         <Text style={styles.buttonText}>Botón Personalizado</Text>
       </TouchableHighlight>
 
-      {/* Botón personalizado con Pressable y un icono */}
+      {/* Botón personalizado */}
       <Pressable
         style={styles.iconButton}
         onPress={() => showAlert("Este es un mensaje con icono")}
